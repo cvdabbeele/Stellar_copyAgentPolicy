@@ -1,6 +1,6 @@
 #Requires -Version 5.1
 # ==============================================================================
-# FILE      : Copy-StellarGroupPolicy.ps1
+# FILE      : Stellar_CopyGroupPolicy.ps1
 # CREATED   : 2026-03-13 00:00:00
 # PURPOSE   : Copies the security policy from one StellarOne agent group to
 #             another, creating the destination group if it does not yet exist.
@@ -40,7 +40,7 @@
     If this group does not exist in StellarOne it will be created automatically.
 
 .EXAMPLE
-    .\Copy-StellarGroupPolicy.ps1 -SourceAgentGroup "Production-Line-A" `
+    .\Stellar_CopyGroupPolicy.ps1 -SourceAgentGroup "Production-Line-A" `
                                   -DestinationAgentGroup "Production-Line-B"
 
     Copies all policies from "Production-Line-A" to "Production-Line-B".

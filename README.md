@@ -12,7 +12,7 @@ A PowerShell 5.1 script that copies the security policy from one **TXOne Stellar
 ## Quick start
 
 ```powershell
-.\Copy-StellarGroupPolicy.ps1 -SourceAgentGroup "GroupA" -DestinationAgentGroup "GroupB"
+.\Stellar_CopyGroupPolicy.ps1 -SourceAgentGroup "GroupA" -DestinationAgentGroup "GroupB"
 ```
 
 ## Setup
@@ -23,15 +23,15 @@ A PowerShell 5.1 script that copies the security policy from one **TXOne Stellar
 
 ## Known limitation
 
-Agent passwords are **not copied**. The StellarOne API never exposes password values — they must be set manually on the destination group after running the script. See [Copy-StellarGroupPolicy.md](Copy-StellarGroupPolicy.md) for full details.
+Agent passwords are **not copied**. The StellarOne API never exposes password values — they must be set manually on the destination group after running the script. See [Stellar_CopyGroupPolicy.md](Stellar_CopyGroupPolicy.md) for full details.
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `Copy-StellarGroupPolicy.ps1` | The main script |
-| `Copy-StellarGroupPolicy.md` | Full documentation |
-| `Copy-StellarGroupPolicy.pdf` | PDF version of the documentation |
+| `Stellar_CopyGroupPolicy.ps1` | The main script |
+| `Stellar_CopyGroupPolicy.md` | Full documentation |
+| `Stellar_CopyGroupPolicy.pdf` | PDF version of the documentation |
 | `stellarOne_example.conf` | Template for server configuration |
 | `secrets_example.txt` | Template for API credentials |
 | `StellarCopyGroupPolicy.prd.md` | Original requirements |

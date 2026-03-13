@@ -1,4 +1,4 @@
-# Copy-StellarGroupPolicy.ps1
+# Stellar_CopyGroupPolicy.ps1
 
 **Created:** 2026-03-13 00:00:00
 
@@ -49,7 +49,7 @@ Before running the script, make sure you have:
 Open a PowerShell window and run:
 
 ```powershell
-.\Copy-StellarGroupPolicy.ps1 -SourceAgentGroup "GroupA" -DestinationAgentGroup "GroupB"
+.\Stellar_CopyGroupPolicy.ps1 -SourceAgentGroup "GroupA" -DestinationAgentGroup "GroupB"
 ```
 
 ### Parameters
@@ -63,13 +63,13 @@ Open a PowerShell window and run:
 
 **Copy policy from "Production-Line-A" to "Production-Line-B":**
 ```powershell
-.\Copy-StellarGroupPolicy.ps1 -SourceAgentGroup "Production-Line-A" `
+.\Stellar_CopyGroupPolicy.ps1 -SourceAgentGroup "Production-Line-A" `
                                -DestinationAgentGroup "Production-Line-B"
 ```
 
 **Verbose output (shows every API call being made):**
 ```powershell
-.\Copy-StellarGroupPolicy.ps1 -SourceAgentGroup "Production-Line-A" `
+.\Stellar_CopyGroupPolicy.ps1 -SourceAgentGroup "Production-Line-A" `
                                -DestinationAgentGroup "Production-Line-B" -Verbose
 ```
 
@@ -176,8 +176,8 @@ Open the destination group in the StellarOne management console and configure:
 
 ```
 StellarAPI/
-  Copy-StellarGroupPolicy.ps1   <-- The main script (run this)
-  Copy-StellarGroupPolicy.md    <-- This documentation file
+  Stellar_CopyGroupPolicy.ps1   <-- The main script (run this)
+  Stellar_CopyGroupPolicy.md    <-- This documentation file
   StellarOne.conf               <-- Server address (edit with your server's IP/hostname)
   secrets.txt                   <-- API key  (keep this file private!)
 ```
